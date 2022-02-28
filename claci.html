@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+      <div id="display-box">
+     <div id="display">0</div>
+      </div>
+      <div id="contol">
+        <div class="operator1">
+            <button id="per" class="control-button" onclick="controlfunction('percent')">%</button>
+            <button id="ce" class="control-button" onclick="controlfunction('CE')">CE</button>
+            <button id="c" class="control-button" onclick="controlfunction('C')">C</button>
+            <button id="del" class="control-button" onclick="controlfunction('delete')">del</button>
+
+        </div>
+        <div class="operator1">
+            <button class="control-button" onclick="controlfunction('fraction')">1/x</button>
+            <button class="control-button" onclick="controlfunction('sqre')">x<sup>2</sup></button>
+            <button class="control-button" onclick="controlfunction('root')">&#8730;x
+            </button>
+            <button class="control-button" onclick="controlfunction('divide')">/</button>
+
+        </div>
+    <div class="digit">
+        <button class="control-button" onclick="digitfunction('7')">7</button> 
+        <button class="control-button" onclick="digitfunction('8')">8</button>
+        <button class="control-button" onclick="digitfunction('9')">9</button>
+        <button class="control-button" onclick="controlfunction('multiply')">x</button>
+
+    </div>
+    <div class="digit">
+        <button class="control-button" onclick="digitfunction('4')">4</button> 
+        <button class="control-button" onclick="digitfunction('5')">5</button>
+        <button class="control-button" onclick="digitfunction('6')">6</button>
+        <button class="control-button" onclick="controlfunction('subtract')">-</button>
+
+    </div>
+    <div class="digit">
+        <button class="control-button" onclick="digitfunction('1')">1</button> 
+        <button class="control-button" onclick="digitfunction('2')">2</button>
+        <button class="control-button" onclick="digitfunction('3')">3</button>
+        <button class="control-button" onclick="controlfunction('addition')">+</button>
+
+    </div>
+    <div class="operator2">
+        <button class="control-button" onclick="controlfunction('negative')">-/+</button> 
+        <button class="control-button" onclick="digitfunction('0')">0</button>
+        <button class="control-button" onclick="digitfunction('.')">.</button>
+        <button id="equl" class="control-button" onclick="evaluatefunction()">=</button>
+
+    </div>
+      </div>
+  </div>  
+<script src="jscript.js"></script>
+</body>
+</html>

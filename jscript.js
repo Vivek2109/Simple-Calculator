@@ -175,7 +175,21 @@ const beforeDecimalStr = num.toString().split('.')[0];
 return Number(beforeDecimalStr);
 }
 document.addEventListener("keypress",(event)=>{
-    console.log(event.code);
+    
+    if(event.shiftKey){
+        if(event.code==="Digit8"){
+            controlfunction('multiply');
+        }
+        if(event.code==="Equal"){
+            controlfunction('addition');
+        }
+    }
+    if(event.code==="Minus"){
+        controlfunction('subtract');
+    }
+  if(event.code==="Slash"){
+      controlfunction('divide');
+  }
     if(event.code==="Digit1"){
         digitfunction('1');
     }
@@ -201,12 +215,40 @@ if(event.code==="Digit7"){
     digitfunction('7');
 }
 if(event.code==="Digit8"){
+    if(!event.shiftKey){
     digitfunction('8');
+    }
 }
 if(event.code==="Digit9"){
-    digitfunction('9');
+   
+        digitfunction('9');
+        
 }
 if(event.code==="Digit0"){
-    digitfunction('0');
+ 
+        digitfunction('0');
+        
+}
+if(event.code==="Equal"){
+    if(!event.shiftKey){
+   evaluatefunction();
+    }
 }
 });
+document.addEventListener("keydown", KeyCheck);  
+function KeyCheck(event)
+{
+   var KeyID = event.keyCode;
+   switch(KeyID)
+   {
+      case 8:
+   controlfunction('delete');
+      break; 
+      case 46:
+        controlfunction('delete');
+      break;
+      default:
+      break;
+   }
+}
+

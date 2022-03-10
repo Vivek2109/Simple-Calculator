@@ -235,6 +235,9 @@ if(event.code==="Equal"){
     }
 }
 });
+
+
+
 document.addEventListener("keydown", KeyCheck);  
 function KeyCheck(event)
 {

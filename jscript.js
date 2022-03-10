@@ -174,3 +174,39 @@ const beforeDecimalStr = num.toString().split('.')[0];
 
 return Number(beforeDecimalStr);
 }
+document.addEventListener("keypress",(event)=>{
+    console.log(event.code);
+    if(event.code==="Digit1"){
+        digitfunction('1');
+    }
+if(event.code==="Digit2"){
+    digitfunction('2');
+}
+if(event.code==="Digit3"){
+    digitfunction('3');
+}
+if(event.code==="Digit4"){
+    digitfunction('4');
+}
+if(event.code==="Digit4"){
+    digitfunction('4');
+}
+if(event.code==="Digit5"){
+    digitfunction('5');
+}
+if(event.code==="Digit6"){
+    digitfunction('6');
+}
+if(event.code==="Digit7"){
+    digitfunction('7');
+}
+if(event.code==="Digit8"){
+    digitfunction('8');
+}
+if(event.code==="Digit9"){
+    digitfunction('9');
+}
+if(event.code==="Digit0"){
+    digitfunction('0');
+}
+});

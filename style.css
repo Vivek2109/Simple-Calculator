@@ -36,6 +36,7 @@ body{
  justify-content: flex-end;
  flex-direction:column;
  text-align: right;
+ overflow:auto;
 
 }
 /* #display{
